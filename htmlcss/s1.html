@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TASARIM</title>
+</head>
+<body>
+<header>
+    <a href="https://github.com/Harun-civil" class="log1" target="_blank">
+        <img src="../htmlcss/medya/log1.png" width="90px" height="90px" class="log1">
+    </a>
+    <div class="menu-btn"></div>
+    <div class="base">
+        <div class="bar">
+            <a href="../404.html"><i class="fa-solid fa-house"></i>  Ana Sayfa</a>
+            <a href="../404.html"><i class="fa-solid fa-flag"></i>  Konular</a>
+        </div>
+    </div>
+</header>
+<section class="base2">
+    <video class="video-slide active" src="../htmlcss/medya/ap1.mp4" autoplay muted loop ></video>
+    <div class="ss1 active">
+        <h1>YAPAY ZEKANIN <br><span>WEB TASARIMINA ETKİSİ</span></h1>
+        <p>Yapay zeka web sitenizin görünümünü iyileştirmek, arama yeteneklerini geliştirmek, içeriğinizi daha iyi yönetmek ve düzenlemek için size güç verecektir. Ziyaretçilerle etkileşimi iyileştirmek, kişiselleştirmek, kullanıcı deneyimi sunmak ve dijital pazarlama kampanyalarınızla tüketicileri doğru bir şekilde hedeflemek için yardımcı olur.
+            Yapay Tasarım Zekası Sistemlerinin Yükselişi
+Yapay Tasarım Zekası web sitelerinin bugün tasarlanma şeklini ciddi şekilde etkiledi. Geleneksel bir ortamda, kullanıcı arayüzü tasarım süreci genellikle çok zorludur, çünkü arayüzü eşsiz kılmak için çok fazla yaratıcılık ve zaman gerekir. Tasarım süreci sizin ve tasarım ekibinizin fikirlerini paylaşması, beyaz bir tahta üzerinde notlar alınması ve çeşitli olasılıkları ve sonuçları keşif edilmesini gerektirir. 
+
+
+
+Teknolojideki son atılımlarla yapay zeka hızlı bir şekilde çevrimiçi dünyaya yayılmıştır. Grid isimli girişim Web Tasarımı ile yapay zekanın el ele geldiği ilk projelerden birisidir. Grid yapay zekayı kullanarak web tasarımcıların ve web sitesi sahiplerinin ihtiyaçlarına özel arayüzleri oluşturabilmesini sağlıyor. Bu girişimden sonra bir çok başarılı girişim daha olmuştur. Adobe, Firedrop, Bookmark, Kareler, Wix, Terzi gibi firmalar bunlara örneklerdir. 
+
+Yapay zeka artık el ile oluşturulmuş arayüzü tasarımını, geçerli bir HTML koduna dönüştürebilir. Burada yapay zeka görsel tasarım ve tipografiden, animasyonlara ve diğer grafiksel öğelere kadar web tasarımınızın genel içeriğini rutin olarak kontrol edebilir.
+
+Yapay zeka belirli web sitesi türleri için tasarım kararları gerektiğinde özellikle yararlıdır. Örneğin bir e-ticaret siteniz var ise daha başarılı satışların olabilmesi için müşterilerle olan etkileşimleri yapay zeka ile eşleştirerek daha doğru içerikleri müşterilerinize sunabilirsiniz. Yapay zeka web sitesi analitiği, ürün kataloğu, kullanıcılar hakkında bilgiler toplar. Toplanan veriler ile benzersiz bir tasarım oluşturmak için sizden tema, içerik ve renk tercihleri gibi son talimatları alır.
+        </p>             
+    </div>
+     <div class="medya">
+        <a href="https://www.instagram.com/h.civil_/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+        <a href="mailto:civilharun511@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></i></a>
+     </div>
+     <div class="logo2">
+        <a href="https://bozok.edu.tr/">
+            <img src="../htmlcss/medya/log2.png" width="70px" height="70px">
+        </a>
+     </div>
+</section>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const base = document.querySelector(".base")
+    menuBtn.addEventListener("click" , ()=>{
+        menuBtn.classList.toggle("active");
+        base.classList.toggle("active");
+    });
+    
+    const btns = document.querySelectorAll(".btn1");
+    var altbar = function (manual){
+        btns.forEach((btn) => {
+            btn.classList.remove("active");
+
+        });
+    }
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", ()=>{
+        altbar(i);
+        });
+    });
+
+
+</script>
+</body>
+</html>

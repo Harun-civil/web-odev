@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TASARIM</title>
+</head>
+<body>
+<header>
+    <a href="https://github.com/Harun-civil" class="log1" target="_blank">
+        <img src="../htmlcss/medya/log1.png" width="90px" height="90px" class="log1">
+    </a>
+    <div class="menu-btn"></div>
+    <div class="base">
+        <div class="bar">
+            <a href="../404.html"><i class="fa-solid fa-house"></i>  Ana Sayfa</a>
+            <a href="../404.html"><i class="fa-solid fa-flag"></i>  Konular</a>
+        </div>
+    </div>
+</header>
+<section class="base2">
+    <video class="video-slide active" src="../htmlcss/medya/ap3.mp4" autoplay muted loop ></video>
+    <div class="ss1 active">
+        <h1 s>YAPAY ZEKANIN <br><span>FAYDALARI NELERDİR?</span></h1>
+        <p>Yapay zekâ, bir insanın yapabileceği bazı görevleri daha fazla veriyle daha hızlı bir şekilde yapılmasına imkân tanıyarak, hayatımızı kolaylaştırmaktadır. Bu sebeple, yapay zekâ; sesli asistanlar, dil çevirileri, öneri sistemleri, navigasyon, sosyal güvenlik, sağlık hizmetleri, e-ticaret ve yardımcı robot uygulamalarıyla günlük hayatımızda yer almaktadır. Siber güvenlik ve savunma sanayi gibi sektöre özel stratejik çalışmalarda da kullanılmaktadır.Yapay zeka, insanlara göre daha hızlı, doğru ve verimli çalışabilen bir teknolojidir. Yapay zeka sayesinde birçok fayda elde edilebilir. İşte yapay zekanın faydalarından bazıları:
+
+            Verimliliği ve Performansı Artırır: Yapay zeka, insanlardan daha hızlı ve hatasız bir şekilde veri işleyebilir, analiz edebilir ve sonuç üretebilir. Bu sayede verimlilik ve performans artar. Örneğin, yapay zeka ile desteklenen bir fabrika, daha az maliyetle daha çok üretim yapabilir.
+            İnsanların Potansiyelini Ortaya Çıkarır: Yapay zeka, insanların sıkıcı, tekrarlayan ve zaman alıcı görevleri üstlenerek, insanların daha yaratıcı, stratejik ve ilgi çekici işlere odaklanmasını sağlar. Bu sayede insanların potansiyeli ortaya çıkar ve iş tatmini artar¹.
+            Yeni İş Alanları Oluşturur: Yapay zeka, mevcut iş alanlarını değiştirdiği gibi, yeni iş alanları da oluşturur. Yapay zeka uzmanları, veri bilimcileri, makine öğrenimi mühendisleri gibi meslekler yapay zeka sayesinde ortaya çıkmıştır. Ayrıca yapay zeka ile desteklenen sektörlerde de yeni iş imkanları doğmaktadır.
+            Yaşam Kalitesini Yükseltir: Yapay zeka, hayatımızın birçok alanında bize kolaylık sağlar. Akıllı telefonlar, akıllı evler, akıllı araçlar gibi cihazlar yapay zeka ile çalışır ve bize konfor sunar. Ayrıca yapay zeka ile sağlık, eğitim, ulaşım gibi hizmetler de daha kaliteli ve erişilebilir hale gelir.
+            Tıpta Gelişim Sağlar: Yapay zeka, tıp alanında büyük bir gelişim sağlar. Yapay zeka ile hastalıkların teşhisi, tedavisi ve önlenmesi daha kolay ve etkili olur. Ayrıca yapay zeka ile kişiye özel tedavi yöntemleri geliştirilebilir. Yapay zeka aynı zamanda cerrahi operasyonlarda da kullanılabilir.
+            Karmaşık Sorunları Çözer: Yapay zeka, insanların çözmekte zorlandığı veya çözemediği karmaşık sorunları çözebilir. Örneğin, yapay zeka ile iklim değişikliği, doğal afetler, siber güvenlik gibi küresel sorunlara çözüm bulunabilir. Yapay zeka, büyük verileri analiz ederek, geleceği tahmin edebilir ve uygun önlemleri alabilir.
+            
+        </p>             
+    </div>
+     <div class="medya">
+        <a href="https://www.instagram.com/h.civil_/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+        <a href="mailto:civilharun511@gmail.com" target="_blank"><i class="fa-solid fa-at"></i></i></a>
+     </div>
+     <div class="logo2">
+        <a href="https://bozok.edu.tr/">
+            <img src="../htmlcss/medya/log2.png" width="70px" height="70px">
+        </a>
+     </div>
+</section>
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const base = document.querySelector(".base")
+    menuBtn.addEventListener("click" , ()=>{
+        menuBtn.classList.toggle("active");
+        base.classList.toggle("active");
+    });
+    
+    const btns = document.querySelectorAll(".btn1");
+    var altbar = function (manual){
+        btns.forEach((btn) => {
+            btn.classList.remove("active");
+
+        });
+    }
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", ()=>{
+        altbar(i);
+        });
+    });
+
+
+</script>
+</body>
+</html>
